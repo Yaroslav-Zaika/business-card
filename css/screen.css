@@ -1,0 +1,341 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  font-family: Arial;
+}
+
+.container {
+  height: 100%;
+  min-width: 358px;
+  max-width: 718px;
+  margin: 0 auto;
+  position: relative;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=3, Direction=0), progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=3, Direction=90), progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=3, Direction=180), progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=3, Direction=270);
+  -ms-filter: progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=3, Direction=0), progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=3, Direction=90), progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=3, Direction=180), progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=3, Direction=270);
+}
+
+.info {
+  margin-top: 25px;
+  padding: 0 20px;
+}
+.info__photo {
+  max-width: 120px;
+  max-height: 122px;
+  width: 100%;
+  float: left;
+}
+.info__name {
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 129px;
+  padding-top: 7px;
+}
+.info__prof {
+  color: gray;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 129px;
+  padding-top: 6px;
+}
+.info__desc {
+  border-radius: 4px;
+  background-color: #fffbc8;
+  -webkit-box-shadow: 0 0 0 1px rgba(60, 44, 0, 0.25);
+          box-shadow: 0 0 0 1px rgba(60, 44, 0, 0.25);
+  margin-left: 85px;
+  padding: 12px 0;
+  margin-top: 16px;
+}
+.info__desc_text {
+  padding-left: 45px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.service {
+  padding: 0 20px;
+  margin-top: 15px;
+  margin-left: 120px;
+}
+.service__table {
+  width: 100%;
+  text-align: center;
+}
+.service__table_title {
+  text-align: right;
+  padding-right: 33px;
+  padding-bottom: 7px;
+}
+.service__table_border-left {
+  padding-top: 40px;
+  margin-top: 40px;
+  border-left: 1px solid rgba(0, 0, 0, 0.24);
+}
+.service__table_item {
+  width: 80%;
+  height: 24px;
+  position: relative;
+}
+.service__table_line {
+  border-top: 1px solid rgba(0, 0, 0, 0.24);
+  padding-top: 15px;
+}
+.service__table_padd-top {
+  padding-top: 15px;
+}
+.service__wrapper {
+  max-width: 520px;
+}
+.service__font {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  height: 24px;
+  margin-bottom: 3px;
+}
+.service__font_booking {
+  opacity: 0.4;
+  background-color: #3cb305;
+  width: 100%;
+}
+.service__font_tours {
+  opacity: 0.4;
+  background-color: #30b6ee;
+  width: 24.6%;
+}
+.service__font_hotels {
+  margin-bottom: 0;
+  width: 16.4%;
+  opacity: 0.4;
+  background-color: #30b6ee;
+}
+.service__text {
+  position: absolute;
+  color: #333;
+  font-size: 13px;
+  font-weight: 400;
+  padding-top: 5.5px;
+  left: 7px;
+}
+.service__text_all {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 11px;
+  padding: 0;
+}
+.service__num {
+  text-align: center;
+  color: #333;
+  font-size: 13px;
+  font-weight: 700;
+}
+.service__num_all {
+  position: absolute;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 11px;
+}
+
+.reviews {
+  padding: 0 20px;
+  margin-top: 29px;
+  overflow-x: hidden;
+}
+.reviews__nav {
+  display: inline-block;
+}
+.reviews__nav_link {
+  color: #005da1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: underline;
+  margin-right: 7px;
+}
+.reviews__nav_link-active {
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-decoration: none;
+  cursor: default;
+}
+.reviews__social {
+  display: inline-block;
+  float: right;
+}
+.reviews__social_line {
+  display: inline-block;
+  margin-right: 5px;
+}
+.reviews__social_icon-like {
+  display: block;
+  margin-top: 4px;
+  float: left;
+  margin-right: 5px;
+}
+.reviews__social_icon-review {
+  display: block;
+  margin-top: 5px;
+  margin-right: 5px;
+  float: left;
+}
+.reviews__social_sum {
+  display: inline-block;
+  height: 9px;
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+}
+.reviews__clients {
+  margin-bottom: 20px;
+}
+.reviews .review {
+  margin-top: 13px;
+}
+.reviews .client__name {
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+}
+.reviews .client__review_date {
+  font-weight: 400;
+  font-size: 11px;
+  color: #808080;
+}
+.reviews .client__review_text {
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333;
+  height: 100%;
+  padding: 15px;
+  margin-top: 11px;
+  background-color: #f2fbff;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=2, Direction=0), progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=2, Direction=90), progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=2, Direction=180), progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=2, Direction=270);
+  -ms-filter: progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=2, Direction=0), progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=2, Direction=90), progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=2, Direction=180), progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=2, Direction=270);
+}
+.reviews .client__review_text:before, .reviews .client__review_text:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+.reviews .client__review_text:before {
+  border-color: #cfcfcf transparent transparent;
+  border-width: 9px;
+  top: -9px;
+  left: 14px;
+}
+.reviews .client__review_text:after {
+  border-color: #f2fbff transparent transparent;
+  border-width: 7px;
+  left: 17px;
+  top: -7px;
+}
+
+.form {
+  height: 193px;
+  padding: 0 20px;
+  background-color: #f2f2f2;
+}
+.form__textarea {
+  margin-top: 29px;
+  padding: 5px 1%;
+  width: 98%;
+  resize: none;
+  height: 60px;
+  background-color: white;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.44), inset 0 1px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 0 rgba(255, 255, 255, 0.44), inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+.form__button {
+  display: block;
+  width: 57.66%;
+  font-family: PTSans;
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  outline: none;
+  width: 282px;
+  height: 42px;
+  background-color: #fdd639;
+  border-radius: 21px;
+  margin: 23px auto 34px;
+  border: 0;
+}
