@@ -1,0 +1,37 @@
+<div>
+  <div class="reviews">
+    <div class="reviews__nav">
+      <a data-ng-href="#"
+        class="reviews__nav_link"
+        data-ng-init="reviewsCtrl.getReviews(true)"
+        data-ng-click="reviewsCtrl.getReviews(true)">Последние отзывы</a>
+      <a data-ng-href="#"
+        class="reviews__nav_link"
+        data-ng-click="reviewsCtrl.getReviews(false)">Все отзывы</a>
+    </div>
+    <div class="reviews__social">
+      <div class="reviews__social_line">
+        <img src="./images/like.png" class="reviews__social_icon-like" alt="like">
+        <div class="reviews__social_sum">134</div>
+      </div>
+      <div class="reviews__social_line">
+        <img src="./images/reviews.png" class="reviews__social_icon-review" alt="reviews">
+        <div class="reviews__social_sum">14</div>
+      </div>
+    </div>
+    <div class="reviews__clients">
+      <div class="review" data-ng-repeat="review in reviewsCtrl.reviews">
+        <span class="client__name">{{review.name}}</span>
+        <span class="client__review_date">{{review.date}}</span>
+        <span class="test"></span>
+        <div class="client__review_text">{{review.text}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="form">
+    <form>
+      <textarea class="form__textarea" data-ng-model="reviewsCtrl.text" data-ctrl-enter-submit="reviewsCtrl.addReview(reviewsCtrl.text)"></textarea>
+      <button class="form__button" data-ng-click="reviewsCtrl.addReview(reviewsCtrl.text)">Написать консультанту</button>
+    </form>
+  </div>
+</div>

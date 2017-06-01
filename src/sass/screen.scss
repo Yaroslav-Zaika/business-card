@@ -1,0 +1,340 @@
+@import "compass/reset";
+
+$text: #333;
+
+body {
+  font-family: Arial;
+}
+
+.container {
+  height: 100%;
+  min-width: 358px;
+  max-width: 718px;
+  margin: 0 auto;
+  position: relative;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=3, Direction=0),
+          progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=3, Direction=90),
+          progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=3, Direction=180),
+          progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=3, Direction=270);
+  -ms-filter: progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=3, Direction=0),
+          progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=3, Direction=90),
+          progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=3, Direction=180),
+          progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=3, Direction=270);
+}
+
+.info {
+  margin-top: 25px;
+  padding: 0 20px;
+  
+  &__photo {
+    max-width: 120px;
+    max-height: 122px;
+    width: 100%;
+    float: left;
+  }
+
+  &__name {
+    color: $text;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 129px;
+    padding-top: 7px;
+  }
+
+  &__prof {
+    color: gray;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 129px;
+    padding-top: 6px;
+  }
+
+  &__desc {
+    border-radius: 4px;
+    background-color: #fffbc8;
+    box-shadow: 0 0 0 1px rgba(60, 44, 0, 0.25);
+    margin-left: 85px;
+    padding: 12px 0;
+    margin-top: 16px;
+
+    &_text {
+      padding-left: 45px;
+      color: $text;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+  }
+}
+
+.service {
+  padding: 0 20px;
+  margin-top: 15px;
+  margin-left: 120px;
+  
+  
+  &__table {
+    width: 100%;
+    text-align: center;
+    
+    &_title {
+      text-align: right;
+      padding-right: 33px;
+      padding-bottom: 7px;
+    }
+    
+    &_border-left {
+      padding-top: 40px;
+      margin-top: 40px;
+      border-left: 1px solid rgba(0, 0, 0, 0.24);
+    }
+    
+    &_item {
+      width: 80%;
+      height: 24px;
+      position: relative;
+    }
+    
+    &_line {
+      border-top: 1px solid rgba(0, 0, 0, 0.24);
+      padding-top: 15px;
+    }
+    
+    &_padd-top {
+      padding-top: 15px;
+    }
+  }
+  
+  &__wrapper {
+    max-width: 520px;
+  }
+  
+  &__font {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    height: 24px;
+    margin-bottom: 3px;
+  
+    &_booking {
+      opacity: 0.4;
+      background-color: #3cb305;
+      width: 100%;
+    }
+    
+    &_tours {
+      opacity: 0.4;
+      background-color: #30b6ee;
+      width: 24.6%
+    }
+    
+    &_hotels {
+      margin-bottom: 0;
+      width: 16.4%;
+      opacity: 0.4;
+      background-color: #30b6ee;
+    }
+  }
+  
+  &__text {
+    position: absolute;
+    color: $text;
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 5.5px;
+    left: 7px;
+    
+    &_all {
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 11px;
+      padding: 0;
+    }
+  }
+  
+  &__num {
+    text-align: center;
+    color:  $text;
+    font-size: 13px;
+    font-weight: 700;
+    
+    &_all {
+      position: absolute;
+      width: 100%;
+      font-size: 16px;
+      margin-top: 11px;
+    }
+  }
+}
+
+.reviews {
+  padding: 0 20px;
+  margin-top: 29px;
+  overflow-x:hidden;
+  
+  &__nav {
+    display: inline-block;
+    
+    &_link {
+      color:  #005da1;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-decoration: underline;
+      margin-right: 7px;
+    }
+    
+    &_link-active {
+      color: $text;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 16px;
+      text-decoration: none;
+      cursor: default;
+    }
+  }
+  
+  &__social {
+    display: inline-block;
+    float: right;
+    
+    &_line {
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    &_icon-like {;
+      display: block;
+      margin-top: 4px;
+      float: left;
+      margin-right: 5px;
+    }
+    
+    &_icon-review {
+      display: block;
+      margin-top: 5px;
+      margin-right: 5px;
+      float: left;
+    }
+    
+    &_sum {
+      display: inline-block;
+      height: 9px;
+      color: #333;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+  
+  &__clients {
+    margin-bottom: 20px;
+  }
+  
+  .review {
+    margin-top: 13px;
+  }
+  
+  .client {
+    &__name {
+      font-weight: 700;
+      font-size: 14px;
+      color: $text;
+    }
+    
+    &__review {
+      &_date {
+        font-weight: 400;
+        font-size: 11px;
+        color: #808080;
+      }
+      
+      &_text {
+        position: relative;
+        font-weight: 400;
+        font-size: 14px;
+        color: $text;
+        height: 100%;
+        padding: 15px;
+        margin-top: 11px;
+        background-color: #f2fbff;
+        border: 1px solid rgba(0, 0, 0, 0.19);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        zoom: 1;
+        filter: progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=2, Direction=0),
+                progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=2, Direction=90),
+                progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=2, Direction=180),
+                progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=2, Direction=270);
+        -ms-filter: progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=2, Direction=0),
+                progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=2, Direction=90),
+                progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=2, Direction=180),
+                progid:DXImageTransform.Microsoft.Shadow(Color=#808080, Strength=2, Direction=270);
+      }
+      
+      &_text:before, &_text:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border: 1px solid rgba(0, 0, 0, 0.19);
+        transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+      }
+      
+      &_text:before {
+        border-color: #cfcfcf transparent transparent;
+        border-width: 9px;
+        top: -9px;
+        left: 14px;
+      }
+      
+      &_text:after {
+        border-color: #f2fbff transparent transparent;
+        border-width: 7px;
+        left: 17px;
+        top: -7px;
+      }
+    }
+  }
+}
+
+.form {
+  height: 193px;
+  padding: 0 20px;
+  background-color: #f2f2f2;
+
+  &__textarea {
+    margin-top: 29px;
+    padding: 5px 1%;
+    width: 98%;
+    resize: none;
+    height: 60px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.44), inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    outline: none;
+  }
+  
+  &__button {
+    display: block;
+    width: 57.66%;
+    font-family: PTSans;
+    color: $text;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    outline: none;
+    width: 282px;
+    height: 42px;
+    background-color: #fdd639;
+    border-radius: 21px;
+    margin: 23px auto 34px;
+    border: 0;
+  }
+}
